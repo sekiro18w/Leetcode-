@@ -11,4 +11,7 @@ class Solution:
                 head.next=head.next.next
             else:
                 head=head.next
-        return act.next if act and act.val==val else act
+        
+        if act and act.val==val:
+            return act.next
+        return act
