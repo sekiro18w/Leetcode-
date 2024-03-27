@@ -9,7 +9,7 @@ class Solution:
             
             cur=nums[l]+nums[r]
             if cur<=target:
-                ans+=1<<(r-l)
+                ans=(ans+(1<<(r-l)))%(1000000000+7)
                 l+=1
             else:
                 r-=1
