@@ -4,13 +4,13 @@ class Solution:
         j=0
         n=len(s)
         m=len(t)
-        cur=''
+        cur_len=0
         while i<n and j<m:
             if s[i]==t[j]:
-                cur+=s[i]
+                cur_len+=1
                 i+=1
             j+=1
-        return cur==s
+        return cur_len==n
             
             
             
