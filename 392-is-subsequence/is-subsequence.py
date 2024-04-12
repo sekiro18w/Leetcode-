@@ -1,6 +1,5 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
-        
         i=0
         j=0
         n=len(s)
@@ -11,7 +10,6 @@ class Solution:
                 cur+=s[i]
                 i+=1
             j+=1
-        print(cur)
         return cur==s
             
             
