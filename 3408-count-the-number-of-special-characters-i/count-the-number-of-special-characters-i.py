@@ -7,7 +7,7 @@ class Solution:
                 dic[i]=0
             dic[i]+=1
         for i in dic:
-            if (i.islower() and i.upper() in dic) or (i.isupper() and i.lower() in dic):
+            if (i.islower() and i.upper() in dic):
                 ans+=1
-        return ans//2
+        return ans
         
